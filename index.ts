@@ -34,7 +34,11 @@ const server = Bun.serve({
             }
         }
         const res = JSON.stringify(jsonRes);
-        return new Response(res);
+        return new Response(res, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
     },
 });
 

@@ -3,7 +3,8 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "start": "bun index.ts"
+    "start": "bun run index.ts",
+    "dev": "bun --watch index.ts"
   },
   "devDependencies": {
     "bun-types": "latest"
@@ -12,6 +13,9 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "figlet": "^1.6.0"
+    "axios": "^1.5.0",
+    "figlet": "^1.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
